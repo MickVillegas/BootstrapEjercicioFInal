@@ -6,34 +6,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="./js/bootstrap.js"></script>
+    <style>
+      ul, ol {
+    list-style:none;
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+  }
+  
+
+</style>
 </head>
 <body class="bg-secondary">
-  <header class="p-3 bg-primary text-white">
+  <header class="p-3 bg-primary text-white pb-5">
     <div class="container">
 
-        <div class="row">
-            <div class="col">
+        <div class="row text-center">
+            <div class="col-md-2">
                 <a href="./index.html">
               <img src="./img/fazbearEntertainmentLogo.png" alt="Logo de Fazbear Entertainment" width="207px" height="160px">
             </a>
-            </div>
-            <div class="col">
+          </div>
+          <div class="col-2"></div>
+            <div class="col-md-7">
 
-                <div class="row position-relative top-50 mt-4 playwrite-in">
-                    <div class="col">
-                      <a href="./index.html" class="link-underline link-underline-opacity-0 link-dark">Início</a>
-                      </div>
-                      <div class="col">
-                        <a href="./comida.html" class="link-underline link-underline-opacity-0 link-dark">Pizza - bebida</a>
-                      </div>
-                      <div class="col">
-                        <a href="./Contacto.html" class="link-underline link-underline-opacity-0 link-dark">Contacto</a>
-                      </div>
-                      <div class="col">
-                        <a href="./registro.html" class="link-underline link-underline-opacity-0 link-dark">Registrate</a>
-                      </div>
-
+              <div class="row position-relative top-50 mt-5 playwrite-in">
+                <div class="col-3">
+                  <div class="aclarar">
+                  <a href="./index.html" class="link-underline link-underline-opacity-0 link-dark">Início</a>
+                  </div>
                 </div>
+                  <div class="col-3">
+                    <div class="aclarar">
+                    <div id="header">
+                      <ul class="nav">
+                        <li><a href="" class="link-underline link-underline-opacity-0 link-dark">Menu</a>
+                          <ul>
+                            <li class="border border-success border border-4 bg-primary my-1 px-2"><a href="./comida.html" class="link-underline link-underline-opacity-0 link-dark">Lo mas vendido</a></li>
+                            <li class="border border-success border border-4 bg-primary my-1 px-2"><a href="./pizza.html" class="link-underline link-underline-opacity-0 link-dark">Comida</a></li>
+                            <li class="border border-success border border-4 bg-primary my-1 px-2"><a href="./bebida.html" class="link-underline link-underline-opacity-0 link-dark">Bebida</a></li>
+                        </li>
+                    </div>
+                  </div>
+                 
+                </div>
+                  <div class="col-3">
+                    <div class="aclarar">
+                    <a href="./Contacto.html" class="link-underline link-underline-opacity-0 link-dark">Contacto</a>
+                  </div>
+                </div>
+                  <div class="col-3">
+                    <div class="aclarar">
+                    <a href="./registro.html" class="link-underline link-underline-opacity-0 link-dark">Registrate</a>
+                  </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -45,17 +79,21 @@
 <br>
 
 <section class="container-fluid">
-    <div class=" d-flex justify-content-evenly">
-        <div>
-            <img src="./img/linea.png" alt="linea" width="375px" height="3px">
-        </div>
-        <div class="mogra-regular">
-            Encuentranos
-        </div>
-        <div>
-            <img src="./img/linea.png" alt="linea" width="375px" height="3px">
-        </div>
+  <div class="row text-center">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+        <img src="./img/linea.png" alt="linea" width="175px" height="3px">
     </div>
+    <div class="col-md-1"></div>
+    <div class=" col-md-4 mogra-regular">
+        Encuentranos
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+      <img src="./img/linea.png" alt="linea" width="175px" height="3px">
+    </div>
+    <div class="col-md-1"></div>
+</div>
     <br>
     <br>
 
