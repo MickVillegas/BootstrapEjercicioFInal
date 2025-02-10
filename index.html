@@ -8,14 +8,11 @@
     <script src="./js/bootstrap.js"></script>
 
   <style>
-    			ul, ol {
-				list-style:none;
-			}
+
 			
 			.nav li ul {
 				display:none;
 				position:absolute;
-				min-width:140px;
 			}
 			
 			.nav li:hover > ul {
@@ -34,7 +31,7 @@
         <div class="row text-center">
             <div class="col-md-2">
                 <a href="./index.html">
-              <img src="./img/fazbearEntertainmentLogo.png" alt="Logo de Fazbear Entertainment" width="207px" height="160px">
+              <img src="./img/fazbearEntertainmentLogo.png" class="img-fluid" alt="Logo de Fazbear Entertainment" width="207px" height="160px">
             </a>
           </div>
           <div class="col-2"></div>
@@ -43,14 +40,14 @@
               <div class="row position-relative top-50 mt-5 playwrite-in">
                 <div class="col-3">
                   <div class="aclarar">
-                  <a href="./index.html" class="link-underline link-underline-opacity-0 link-dark">Início</a>
+                  <a href="./index.html" class="link-underline link-light link-underline-opacity-0">Início</a>
                   </div>
                 </div>
                   <div class="col-3">
                     <div class="aclarar">
                     <div id="header">
                       <ul class="nav">
-                        <li><a href="" class="link-underline link-underline-opacity-0 link-dark">Menu</a>
+                        <li class="link-underline link-underline-opacity-0 link-dark">Menu
                           <ul>
                             <li class="border border-success border border-4 bg-primary my-1 px-2"><a href="./comida.html" class="link-underline link-underline-opacity-0 link-dark">Lo mas vendido</a></li>
                             <li class="border border-success border border-4 bg-primary my-1 px-2"><a href="./pizza.html" class="link-underline link-underline-opacity-0 link-dark">Comida</a></li>
@@ -86,7 +83,7 @@
       <div class="container justify-content-between bg-primary border border-success rounded-4 border border-4">
         <div class="row">
           <div class="col">
-            <img src="./img/freddyFazbearPizzaLogo.png" alt="Logo de FReddy's Fazbear Pizza" width="267px" height="267px">
+            <img src="./img/freddyFazbearPizzaLogo.png" class="img-fluid" alt="Logo de FReddy's Fazbear Pizza" width="267px" height="267px">
           </div>
           <div class="col fs-4 mt-5 mogra-regular">
             Donde la fantasia y la diversión cobran vida
@@ -117,9 +114,40 @@
         </div>
         <br>
         <br>
-        <div class=" d-flex justify-content-center">
-        <img src="./img/cartaDelDia.png" alt="Carta del dia" width="1087px" height="679px"> 
+
+        <div class="container justify-content-between bg-primary border border-success rounded-4 border border-4 text-center pb-4 pt-4">
+
+<div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/comida2.jpg" class="d-block w-100 img-fluid img-thumbnail" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/fnafofert.jpg" class="d-block w-100 img-fluid img-thumbnail" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/helpWanted.png" class="d-block w-100 img-fluid img-thumbnail" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </div>
+  </div>
+
+
     </section>
 
     </main>
@@ -130,19 +158,19 @@
     <footer class="bg-primary text-white">
         <div class="row">
             <div class="col">
-              <a href="./index.html"><img src="./img/fazbearLogo.png" alt="Logo redondo de Fazbear" width="85px" height="93px"></a>
+              <a href="./index.html"><img src="./img/fazbearLogo.png" class="img-fluid" alt="Logo redondo de Fazbear" width="85px" height="93px"></a>
             </div>
             <div class="col">
 
                 <div class="row mt-3">
                     <div class="col">
-                      <a href="https://www.instagram.com/fnafmovie/"><img src="./img/instagramLog.png" alt="Logo de instagram" width="60px" height="60px"></a>
+                      <a href="https://www.instagram.com/fnafmovie/"><img src="./img/instagramLog.png" class="img-fluid" alt="Logo de instagram" width="60px" height="60px"></a>
                       </div>
                       <div class="col">
-                        <a href="https://x.com/FnafMovie"><img src="./img/twitterLog.png" alt="Logo de twitter" width="60px" height="60px"></a>
+                        <a href="https://x.com/FnafMovie"><img src="./img/twitterLog.png" alt="Logo de twitter" class="img-fluid" width="60px" height="60px"></a>
                       </div>
                       <div class="col">
-                        <a href="https://www.facebook.com/FNAFMovie/"><img src="./img/facebookLOg.png" alt="Logo de facebook" width="60px" height="60px"></a>
+                        <a href="https://www.facebook.com/FNAFMovie/"><img src="./img/facebookLOg.png" class="img-fluid" alt="Logo de facebook" width="60px" height="60px"></a>
                       </div>
 
                 </div>
