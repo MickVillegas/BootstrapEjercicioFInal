@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="">Servicios</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a>		
+				</li>
+		</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+    if (!document.cookie.includes("cookiesAccepted=true")) {
+        let cookieBanner = document.createElement("div");
+        cookieBanner.innerHTML = `
+            <div style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #222; color: white; padding: 15px; border-radius: 5px; text-align: center;">
+                Este sitio usa cookies. <button id="acceptCookies" style="background: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">Aceptar</button>
+            </div>
+        `;
+        document.body.appendChild(cookieBanner);
+
+        document.getElementById("acceptCookies").addEventListener("click", function () {
+            document.cookie = "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // Expira en 30 días
+            cookieBanner.remove();
+        });
+    }
+});
+
+</script>
+
+	</body>
+</html>
